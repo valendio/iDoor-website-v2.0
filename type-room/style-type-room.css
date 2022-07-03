@@ -1,0 +1,74 @@
+/* CSS Reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+:root {
+    --gray :#4a5568;
+    --darkgrey : #2D3748;
+}
+
+/* Navbar Section */
+nav {
+	width: 85%;
+	margin: 10px auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 8vh;
+}
+
+.nav-logo h1 a {
+	font-size: 32px;
+	height: auto;
+	padding: 0 10px;
+    color: red;
+    text-decoration: none;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
+    list-style: none;
+}
+
+.nav-links a {
+	color: #000;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+/* Container */
+
+.container-box {
+    background-color: whitesmoke;
+    width: 80%;
+    height: auto;
+    border: 1vh solid green;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.main-img {
+    margin: 5px;
+    padding: 5px;
+}
+
+.main-img img {
+    width: 160vh;
+    height: 120vh;
+}
+
+.small-img {
+    margin: 5px;
+    padding: 5px;
+}
+.small-img img {
+    width: 39.3vh;
+}
+

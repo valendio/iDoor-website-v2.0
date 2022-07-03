@@ -49,7 +49,7 @@ nav {
 .booking-room-text h1 {
 	font-family: 'poppins';
 	font-size: 35px;
-	text-align: center;
+	transform: translate(1%, -2%);
 }
 
 .booking-room-text p {
@@ -158,7 +158,6 @@ nav {
     position: absolute;
     left: 20%;
     bottom: -30vh;
-   
 }
 
 .superior-booking-btn:hover {
@@ -188,3 +187,5 @@ nav {
     top: 23vh;
     left: 39vh;
 }
+
+/* Form booking */

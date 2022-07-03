@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-logo">
+        <h1><a href="#">iDoor</a></h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="../home/home.html">Home</a></li>
+      <li><a href="../detail/index.html">Details</a></li>
+      <li><a href="../datapengunjung/index.html">Data Pengunjung</a></li>
+    </ul>
+  </nav>
+
+  <div class="form-booking-room">
+    <h1>FORM PEMESANAN PENGINAPAN</h1>
+  <form action="form-booking" method="post">
+      <div class="elem-group">
+        <label for="name">Nama anda</label>
+        <input type="text" id="name" name="visitor_name" pattern=[A-Z\sa-z]{3,20} required>
+      </div>
+
+      <div class="elem-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="visitor_email" required>
+      </div>
+      
+      <div class="elem-group">
+        <label for="phone">Nomor telepon</label>
+        <input type="tel" id="phone" name="visitor_phone" required>
+      </div>
+      <hr>
+
+      <div class="elem-group inlined">
+        <label for="adult">Dewasa</label>
+        <input type="number" id="adult" name="total_adults" min="1" required>
+      </div>
+
+      <div class="elem-group inlined">
+        <label for="child">Anak-anak</label>
+        <input type="number" id="child" name="total_children" min="0" required>
+      </div>
+
+      <div class="elem-group inlined">
+        <label for="checkin-date">Check-in Date</label>
+        <input type="date" id="checkin-date" name="checkin" required>
+      </div>
+
+      <div class="elem-group inlined">
+        <label for="checkout-date">Check-out Date</label>
+        <input type="date" id="checkout-date" name="checkout" required>
+      </div>
+
+      <div class="elem-group">
+        <label for="room-selection">Pilih tipe kamar</label>
+        <select id="room-selection" name="room_preference" required>
+            <option value="">Pilih tipe kamar yang anda inginkan</option>
+            <option value="connecting">Deluxe</option>
+            <option value="adjoining">Superior</option>
+        </select>
+      </div>
+      <hr>
+
+      <div class="elem-group">
+        <label for="message">Tinggalkan pesan anda</label>
+        <textarea id="message" name="visitor_message" required></textarea>
+      </div>
+      <button type="submit">Pesan kamar</button>
+    </form>
+  </div>
+</body>
+</html>
