@@ -1,0 +1,190 @@
+/* CSS Reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+:root {
+    --gray :#4a5568;
+    --darkgrey : #2D3748;
+}
+
+
+/* Home CSS */
+
+/* Navbar Section */
+nav {
+	width: 85%;
+	margin: 10px auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 8vh;
+}
+
+.nav-logo h1 a {
+	font-size: 32px;
+	height: auto;
+	padding: 0 10px;
+    color: red;
+    text-decoration: none;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
+    list-style: none;
+}
+
+.nav-links a {
+	color: #000;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 14px;
+}
+/* End of navbar section */
+.booking-room-text h1 {
+	font-family: 'poppins';
+	font-size: 35px;
+	text-align: center;
+}
+
+.booking-room-text p {
+	max-width: 60%;
+	transform: translate(2%, -2%);
+	font-size: 14px;
+}
+
+.overlay {
+	position: absolute;
+	height: 103vh;
+	width: 106vh;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: red;
+}
+
+.superior-room:hover .overlay {
+	opacity: 0.5;
+}
+
+.deluxe-room:hover .overlay {
+	opacity: 0.5;
+}
+
+.about-room-text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 7%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+/* Style image positioning */
+.detail-kamar {
+    height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+/* Superior room image section */
+.superior-room img {
+	width: 106vh;
+	height: 103vh;
+}
+
+.deluxe-room img {
+	width: 106vh;
+	height: 103vh;
+}
+
+/* Deluxe button */
+.deluxe-booking-btn{
+    margin-top: 30px;
+	width: 120px;
+	border: none;
+	border-radius: 5px;
+	height: 36px;
+	background-color: red;
+	stroke: none;
+	cursor: pointer;
+	transition-duration: 0.4s;
+    position: absolute;
+    right: 46vh;
+    bottom: -30vh;
+   
+}
+
+.deluxe-booking-btn:hover {
+    background-color: white;
+	color: red;
+}
+
+.deluxe-booking-btn a {
+    color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.deluxe-booking-btn a:hover {
+    color: red;
+}
+
+.superior-booking-btn a:hover {
+    color: red;
+}
+
+/* Superior booking room button */
+
+.superior-booking-btn{
+    margin-top: 30px;
+	width: 120px;
+	border: none;
+	border-radius: 5px;
+	height: 36px;
+	background-color: red;
+	stroke: none;
+	cursor: pointer;
+	transition-duration: 0.4s;
+    position: absolute;
+    left: 20%;
+    bottom: -30vh;
+   
+}
+
+.superior-booking-btn:hover {
+    background-color: white;
+	color: red;
+}
+
+.superior-booking-btn a {
+    color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.superior-booking-btn a:hover {
+    color: red;
+}
+
+/* Superior booking room caption */
+
+.superior-booking-caption {
+    color: whitesmoke;
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: 600;
+    position: absolute;
+    top: 23vh;
+    left: 39vh;
+}

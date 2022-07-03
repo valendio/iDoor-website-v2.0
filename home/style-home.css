@@ -1,11 +1,17 @@
-:root {
-    background-color: #fbfaf9;
+/* CSS Reset */
+*{
+	margin: 0;
+	padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
+:root {
+    --gray :#4a5568;
+    --darkgrey : #2D3748;
+}
+
+/* Home CSS */
 
 /* Navbar Section */
 nav {
@@ -36,6 +42,93 @@ nav {
 	color: #000;
 	text-decoration: none;
 	font-weight: 500;
-	font-size: 16px;
+	font-size: 14px;
 }
-/* End of navbar section */
+
+/* Hero Section*/
+.hero {
+    background-image: url(./img/hero.png);
+    background-size: cover;
+    height: 90vh;
+	margin-bottom: 10vh;
+}
+
+.hero-caption {
+	position: relative;
+	top: 24vh;
+	left: 16vh;
+}
+
+.hero-caption h2 {
+	color: #fff;
+	font-weight: 600;
+	font-size: 42px;
+	line-height: 1.1;
+}
+
+.hero-caption p {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	opacity: 90%;
+	line-height: 1.5;
+	margin-top: 8px;
+	width: 300px;
+}
+
+.hero-caption button {
+	margin-top: 30px;
+	width: 120px;
+	border: none;
+	border-radius: 5px;
+	height: 36px;
+	background-color: red;
+	stroke: none;
+	cursor: pointer;
+}
+
+.hero-caption button a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+
+/* Content Section */
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+.main-menu {
+	display: flex;
+	height: 40vh;
+	padding-bottom: 10px;
+}
+
+.sidebar {
+	width: 20%;
+}
+
+.sidebar ul li {
+  width: 90%;
+  padding: 10px 20px;
+  line-height: 1.25;
+  margin: 10px 0;
+  border-radius: 5px;
+  list-style: none;
+  background-color: rgb(197, 55, 55);
+}
+
+.sidebar ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.content {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	line-height: 1.5;
+}
